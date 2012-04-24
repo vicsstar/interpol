@@ -1,5 +1,3 @@
-package com.interpol
-
 import scala.collection.mutable.HashMap
 
 /**
