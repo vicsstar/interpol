@@ -10,15 +10,17 @@ class NamedInterpolator(text: String) {
   /**
    * Add a named parameter to the parameter hash map.
    */
-  def addParam(key: String, value: Any) {
+  def addParam(key: String, value: Any) = {
     params += key -> value
+    this
   }
 
   /**
    * Adds a variable-length parameter list to the parameter hash map.
    */
-  def addParams(params: (String, Any)*) {
+  def addParams(params: (String, Any)*) = {
     this.params ++= params
+    this
   }
 
   /**
