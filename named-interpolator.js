@@ -62,7 +62,7 @@ var NamedInterpolator = function() {
 
     // begin the interpolation process.
     interpolate: function() {
-      return this._interpolate(this.text, Object.keys(this.params));
+      return this._interpolate(this.text, Object.keys(this.params).sort().reverse());
     },
 
     /*
