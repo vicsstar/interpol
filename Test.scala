@@ -7,7 +7,7 @@
 class Test {
 
   def main(args: Array[String]) {
-    val ni = new NamedInterpolator(
+    val ni = new NamedInterpol(
       "Hello @user! You are seeing this email because we received a request to reset your password on <a href=\"@site\">@site</a>"
     )
     ni.addParams(
